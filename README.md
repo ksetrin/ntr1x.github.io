@@ -35,7 +35,7 @@ _Archery Engine_ is very easy to install, extend and configure. It provides you:
 
 ### Technologies
 
-_Archery Engine_ is developed in JS using advanced technologies like ES6, MVVM, HTML5 and CSS3. It based on [Vue.js](https://vuejs.org/) and  [Node.js](https://nodejs.org/en/). We developed it with love to customers, technologies and community.
+_Archery Engine_ is developed in JS using advanced technologies like ES6, MVVM, HTML5 and CSS3. It based on [Vue.js](https://vuejs.org/) and  [Node.js](https://nodejs.org/). We developed it with love to customers, technologies and community.
 
 
 ## Storage
@@ -71,8 +71,7 @@ _Archery Storage_ is developed in Java using advanced technologies like JaxRS, J
 
 ## Cloud
 
-Subproject codename _Archery Cloud_ is a public accessible installation of the _Archery_ and the _Storage_. It also provides a set of advanced options
-and commercial services for end-users and developers. This is our _Cloud_:
+Subproject codename _Archery Cloud_ is a public accessible installation of the _Archery_ and the _Storage_. It also provides a set of advanced options and commercial services for end-users and developers. This is our _Cloud_:
 [http://archery.ntr1x.com](http://archery.ntr1x.com).
 
 
@@ -87,7 +86,7 @@ Once preparing _Cloud_ you will be able to:
 - Sell your Portals and Services online
 
 Why your own _Cloud_? It Depends on who are you.
-- A Hosting Provider with our _Cloud_ can sell one another commercial service.
+- A Hosting Provider with his own _Cloud_ can sell one another commercial service.
 - A Government Organization can make the Cloud with additional security requirements.
 - A Software Company can use _Cloud_ as a platform for its own products.
 
