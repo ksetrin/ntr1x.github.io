@@ -45,9 +45,9 @@ Subproject codename _Archery Storage_ is a set of REST Storages with advanced co
 The sources of this subproject and its modules are public accessible on GitHub:
 
 - Sources:
-[https://github.com/ntr1x/ntr1x-storage](https://github.com/ntr1x/ntr1x-storage)
+[https://github.com/ntr1x/ntr1x-storage-launch](https://github.com/ntr1x/ntr1x-storage-launch)
 - Documentation:
-[http://ntr1x.github.io/ntr1x-storage/](http://ntr1x.github.io/ntr1x-storage/)
+[http://ntr1x.github.io/ntr1x-storage-launch/](http://ntr1x.github.io/ntr1x-storage-launch/)
 
 > _Archery Storage_ is a open source and free for non-commercial use.
 > You can make your own installation and use it in any non-commercial project,
