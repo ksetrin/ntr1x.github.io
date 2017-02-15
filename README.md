@@ -1,82 +1,106 @@
 ---
 layout: page
-title: Archery Engine
+title: Archery
 ---
-
 # About
 
-This repository contains build scripts for the _Archery Engine_. The _Engine_ is deployed to
-[http://archery.ntr1x.com](http://archery.ntr1x.com), you can see it in action there.
-This page describes how to build and install it. Here you can read more about the whole project:
-[https://ntr1x.github.io/](https://ntr1x.github.io/).
+Archery is the Cloud platform to build business friendly online services.
 
-# Installation
+# Products
 
-Let's assume that you have a $PROJECT_DIR folder and want to build _Engine_ there.
+The platform is devided to subprojects that implement the different parts: the _Engine_, the _Storage_ and the _Cloud_.
 
-``` bash
-cd $PROJECT_DIR
-```
 
-_Engine_ consists of several modules. You have to clone all
-necessary modules before you build Archery.
+## Engine
 
-``` bash
+Subproject codename _Archery Engine_ contains the Control Panel, the Online Editor and the Viewer Runtime. By default all _Engine_ installations use data from the _Storage_ installation in the _Cloud_.
 
-git clone git@github.com:ntr1x/ntr1x-archery.git
-git clone git@github.com:ntr1x/ntr1x-archery-core.git
-git clone git@github.com:ntr1x/ntr1x-archery-shell.git
-git clone git@github.com:ntr1x/ntr1x-archery-landing.git
-git clone git@github.com:ntr1x/ntr1x-archery-widgets.git
-git clone git@github.com:ntr1x/ntr1x-archery-widgets-academy.git
-```
+The sources of this subproject and its modules are public accessible on GitHub:
 
-Last dependency is optional, it contains some extra site-specific widgets.
-This dependency is good entry point for those who code.
+- Sources:
+[https://github.com/ntr1x/ntr1x-archery](https://github.com/ntr1x/ntr1x-archery)
+- Documentation:
+[http://ntr1x.github.io/ntr1x-archery/](http://ntr1x.github.io/ntr1x-archery/)
 
-Then install dependencies for modules:
+> _Engine_ is a open source and free for non-commercial use.
+> You can make your own installation and use it in any non-commercial project,
+> but for commercial use the commercial license is required. There are many
+> pricing options available for our customers on [our site](http://archery.ntr1x.com).
 
-``` bash
-cd $PROJECT_DIR/ntr1x-archery-core && npm i
-cd $PROJECT_DIR/ntr1x-archery-landing && npm i
-cd $PROJECT_DIR/ntr1x-archery-shell && npm i
-cd $PROJECT_DIR/ntr1x-archery-widgets && npm i
-cd $PROJECT_DIR/ntr1x-archery-widgets-academy && npm i
-```
+### Benefits
 
-Finally build the app:
+_Archery Engine_ is very easy to install, extend and configure. It provides you:
 
-``` bash
-cd $PROJECT_DIR/ntr1x-archery && npm i
-```
+- Tens of Portal Templates (organization portals, user blogs, public galleries, online stores).
+- The Visual Editor to develop your own portals.
+- The Control Panel to manage portals and domains.
+- The Control Panel to configure mail settings and mail templates.
+- The Viewer Runtime to launch portals in Cloud Environment.
 
-The app will be built to the `$PROJECT_DIR/ntr1x-archery/`
+### Technologies
 
-# Launching
+_Archery Engine_ is developed in JS using advanced technologies like ES6, MVVM, HTML5 and CSS3. It based on [Vue.js](https://vuejs.org/) and  [Node.js](https://nodejs.org/). We developed it with love to customers, technologies and community.
 
-There are two launch entry points, one for the cloud editor
-installations and another for the portal viewers. You have
-to launch both.
 
-``` bash
-pm2 start $PROJECT_DIR/ntr1x-archery/www/bin/server
-pm2 start $PROJECT_DIR/ntr1x-archery/www/bin/viewer
-```
+## Storage
 
-The Server will be launched at
-[http://localhost:3000/](http://localhost:3000/).
-The Viewer ill be launched at
-[http://localhost:3001/](http://localhost:3001/).
+Subproject codename _Archery Storage_ is a set of REST Storages with advanced configuration & security options. All _Storage_ installations could be used __with or without__ the _Engine_.
 
-> The Server link will be accessible without additional configuration.
-> But the Viewer will fail. The Viewer app uses domain names to determine
-> target portals, so you will not be able to use Viewer until you
-> configure domain proxy.
+The sources of this subproject and its modules are public accessible on GitHub:
 
-# Configuration
+- Sources:
+[https://github.com/ntr1x/ntr1x-storage-launch](https://github.com/ntr1x/ntr1x-storage-launch)
+- Documentation:
+[http://ntr1x.github.io/ntr1x-storage-launch/](http://ntr1x.github.io/ntr1x-storage-launch/)
 
-The configuration is located in `$PROJECT_DIR/ntr1x-archery/config` folder
-You can change there the default server endpoint and application ports.
+> _Archery Storage_ is a open source and free for non-commercial use.
+> You can make your own installation and use it in any non-commercial project,
+> but for commercial use the commercial license is required. There are many
+> pricing options available for our customers on [our site](http://archery.ntr1x.com).
 
-With the endpoint provided you will see all the data published at [http://archery.ntr1x.com](http://archery.ntr1x.com).
-You can change the Storage endpoint when you launch your own Storage.
+### Benefits
+
+_Archery Storage_ is very easy to install, extend and configure. It provides you:
+
+- Tens of REST endpoints (goods and prices, products and servies, communication, collaboration, booking, etc.).
+- Advanced security handling (built-in authentication & authorization, scoped resources and user databases).
+- An encrypted storage for sensitive data.
+
+And the _Storage_ is __really simple__. It allows developers to adopt any endpoint in minutes or develop a new one in convinient way. And you can use any Storage Endpoint directly from the Visual Editor of the _Engine_.
+
+### Technologies
+
+_Archery Storage_ is developed in Java using advanced technologies like JaxRS, JPA and DI. It based on [Spring Framework](https://projects.spring.io/spring-framework/) and  [Jersey](https://jersey.java.net/). It provides access to several relational and non-relational storages and works with modern databases.
+
+
+## Cloud
+
+Subproject codename _Archery Cloud_ is a public accessible installation of the _Archery_ and the _Storage_. It also provides a set of advanced options and commercial services for end-users and developers. This is our _Cloud_:
+[http://archery.ntr1x.com](http://archery.ntr1x.com).
+
+
+> _Archery Cloud_ is not a Product, but an Installation. It contains sensitive configuration data. The _NTR1X Team_ would be glad to help our customers to prepare their own _Cloud_.
+
+### Benefits
+
+Once preparing _Cloud_ you will be able to:
+
+- Launch new Portal in seconds
+- Manage your own Portal Templates
+- Sell your Portals and Services online
+
+Why your own _Cloud_? It Depends on who are you.
+- A Hosting Provider with his own _Cloud_ can sell one another commercial service.
+- A Government Organization can make the Cloud with additional security requirements.
+- A Software Company can use _Cloud_ as a platform for its own products.
+
+In any case - the _Cloud_ is a great software platform for your needs.
+
+### Technologies
+
+_Archery Cloud_ is based on _Engine_, _Storage_, [Nginx](https://nginx.org) and [Solr](http://lucene.apache.org/solr/). It doesn't require any third-party commercial modules, works at most modern Linux and Windows installations and can be easily clustered.
+
+
+# Support
+
+The _NTR1X Team_ would be glad to provide any support to developers via GitHub and to commercial users via Mail, Skype and Phone.
