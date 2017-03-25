@@ -264,7 +264,7 @@ title: Overview
 
 ### 2. Редактор со свёрнутыми панелями
 
-Главный элемент редактора - холс, на который размещаются другие компоненты.
+Главный элемент редактора - холст, на который размещаются другие компоненты.
 
 **Editor 02 - Canvas - Wide**
 [(Full Size)](/public/screen/designer/Editor 02 - Canvas - Wide.png)
@@ -273,7 +273,7 @@ title: Overview
 
 ### 3. Палитра микрокомпонент
 
-Палитра микрокомпонент содержит примитивные элементы: текстовые блоки, иконки, кнопки и ссылки.
+Содержит примитивные элементы: текстовые блоки, иконки, кнопки и ссылки.
 
 **Editor 03 - Palette - Micros**
 [(Full Size)](/public/screen/designer/Editor 03 - Palette - Micros.png)
@@ -282,115 +282,165 @@ title: Overview
 
 ### 4. Палитра контейнеров
 
-Палитра контейнеров содержит элементы, которые управляют расположением жругих компонент.
+Содержит элементы, которые управляют расположением жругих компонент.
 - Группа Stack позволяет вытраивать другие элементы стеком друг за другом, вертикально или горизонтально.
 - Группа Repeaters позволяет отображать один и тот же элемент с разными параметрами несколько раз.
 - Группа Layers позволяет выстраивать элемент друг перед другом. - Элемент Composite позволяет использовать ранее созданные в рамках портала пользовательские компоненты в качестве фрагментов страницы.
 
 **Editor 04 - Palette - Containers**
 [(Full Size)](/public/screen/designer/Editor 04 - Palette - Containers.png)
+
 ![Editor 04 - Palette - Containers](/public/screen/designer/thumbs/Editor 04 - Palette - Containers.jpg)
 
-###
+### 5. Палитра элементов форм
+
+Содержит текстовые поля ввода, кнопки, переключатели, выпадающие списки.
 
 **Editor 05 - Palette - Form**
 [(Full Size)](/public/screen/designer/Editor 05 - Palette - Form.png)
+
 ![Editor 05 - Palette - Form](/public/screen/designer/thumbs/Editor 05 - Palette - Form.jpg)
 
-###
+### 6. Палитра композитов
+
+Содержит библиотеку программных компонент-расширений. Элементы в этой палитре свёрстаны и описаны программистами и подключены через специальную программную точку расширения.
 
 **Editor 06 - Palette - Composites**
 [(Full Size)](/public/screen/designer/Editor 06 - Palette - Composites.png)
+
 ![Editor 06 - Palette - Composites](/public/screen/designer/thumbs/Editor 06 - Palette - Composites.jpg)
 
-###
+### 7. Палитра изображений
+
+Содержит изоюражения, доступные для использования (в том числе коммерческого) под лицензией Creative Commons.
 
 **Editor 07 - Palette - Images**
 [(Full Size)](/public/screen/designer/Editor 07 - Palette - Images.png)
 ![Editor 07 - Palette - Images](/public/screen/designer/thumbs/Editor 07 - Palette - Images.jpg)
 
-###
+### 8. Панель структуры
+
+Через данную панель можно управлять списком страниц, списком модальных диалогов, списком пользовательских элементов управления, списком источников данных, списком внутренних переменных страницы.
 
 **Editor 08 - Shell - Structure**
 [(Full Size)](/public/screen/designer/Editor 08 - Shell - Structure.png)
+
 ![Editor 08 - Shell - Structure](/public/screen/designer/thumbs/Editor 08 - Shell - Structure.jpg)
 
-###
+### 9. Панель дерева страницы
+
+Через данную панель можно просмотреть структуру страницы в виде дерева. Каждый элемент дерева можно скрыть или отредактировать.
 
 **Editor 09 - Shell - Tree**
 [(Full Size)](/public/screen/designer/Editor 09 - Shell - Tree.png)
+
 ![Editor 09 - Shell - Tree](/public/screen/designer/thumbs/Editor 09 - Shell - Tree.jpg)
 
-###
+### 10. Панель консоли
+
+В консоли отображаются служебные сообщения, возникающие в процессе работы редактора.
 
 **Editor 10 - Shell - Console**
 [(Full Size)](/public/screen/designer/Editor 10 - Shell - Console.png)
+
 ![Editor 10 - Shell - Console](/public/screen/designer/thumbs/Editor 10 - Shell - Console.jpg)
 
-###
+### 11. Загруженные изображения
+
+Реактор позволяет загружать изображения, которые можно использовать при оформлении страниц портала. Изображения хранятся в группах с общими настройками.
 
 **Editor 11 - Images**
 [(Full Size)](/public/screen/designer/Editor 11 - Images.png)
+
 ![Editor 11 - Images](/public/screen/designer/thumbs/Editor 11 - Images.jpg)
 
-###
+### 12. Группа изображений
+
+Группа изображений определяе настройки, которые используются при загрузке изображений на сервер. Каждая группа содержит список настроек конвертеров, применяемых при загрузке изображения. Конвертер thumbnail имеет служебное назначение, он формирует превью изображения для редактора.
 
 **Editor 12 - Images - Groups**
 [(Full Size)](/public/screen/designer/Editor 12 - Images - Groups.png)
 ![Editor 12 - Images - Groups](/public/screen/designer/thumbs/Editor 12 - Images - Groups.jpg)
 
-###
+### 13. Настройки конвертера
+
+Конвертер помогает обрезать или масштабировать картинку на сервере при загрузке.
 
 **Editor 13 - Images - Group settings**
 [(Full Size)](/public/screen/designer/Editor 13 - Images - Group settings.png)
+
 ![Editor 13 - Images - Group settings](/public/screen/designer/thumbs/Editor 13 - Images - Group settings.jpg)
 
-###
+### 14. Выбор картинки
+
+Интерфейс выбора картинки позволяет получить (скопировать) ссылку на картинку нужного размера.
 
 **Editor 14 - Images - Choose**
 [(Full Size)](/public/screen/designer/Editor 14 - Images - Choose.png)
+
 ![Editor 14 - Images - Choose](/public/screen/designer/thumbs/Editor 14 - Images - Choose.jpg)
 
-###
+### 15. Загрузки
+
+Платформа позволяет загружать картинки, архивы, видео-,  аудио- и текстовые файлы.
 
 **Editor 15 - Uploads**
 [(Full Size)](/public/screen/designer/Editor 15 - Uploads.png)
+
 ![Editor 15 - Uploads](/public/screen/designer/thumbs/Editor 15 - Uploads.jpg)
 
-###
+### 16. Группа файлов
+
+Группы позволяют логически структурировать загружаемые материалы.
 
 **Editor 16 - Uploads - Create group**
 [(Full Size)](/public/screen/designer/Editor 16 - Uploads - Create group.png)
+
 ![Editor 16 - Uploads - Create group](/public/screen/designer/thumbs/Editor 16 - Uploads - Create group.jpg)
 
-###
+### 17. Выбор файла
+
+Интерфейс выбора файла позволяет получить (скопировать) ссылку на загруженный файл.
 
 **Editor 17 - Uploads - Choose**
 [(Full Size)](/public/screen/designer/Editor 17 - Uploads - Choose.png)
+
 ![Editor 17 - Uploads - Choose](/public/screen/designer/thumbs/Editor 17 - Uploads - Choose.jpg)
 
-###
+### 18. Создание страницы
+
+Каждая страница имеет название и группу свойств. Достаточно указать лишь название.
 
 **Editor 18 - Pages - Create**
 [(Full Size)](/public/screen/designer/Editor 18 - Pages - Create.png)
+
 ![Editor 18 - Pages - Create](/public/screen/designer/thumbs/Editor 18 - Pages - Create.jpg)
 
-###
+### 19. Редактирование параметров страницы
+
+Страница визуально представляется как холст, который может иметь размеры, цвет фона, настройки шрифта и некоторые другие настройки.
 
 **Editor 19 - Pages - Edit**
 [(Full Size)](/public/screen/designer/Editor 19 - Pages - Edit.png)
+
 ![Editor 19 - Pages - Edit](/public/screen/designer/thumbs/Editor 19 - Pages - Edit.jpg)
 
-###
+### 20. Загрузка схемы внешнего источника
+
+Платформа позволяет автоматически загружать Swagger-описания REST-сервисов. Данный интерфейс не обязателен для использования (не все внешние источники имеют описание), но в случае наличия Swagger-описания - рекомендован к исопльзованию.
 
 **Editor 20 - Sources - Load schema**
 [(Full Size)](/public/screen/designer/Editor 20 - Sources - Load schema.png)
+
 ![Editor 20 - Sources - Load schema](/public/screen/designer/thumbs/Editor 20 - Sources - Load schema.jpg)
 
-###
+### 21. Выбор метода из Swagger-описания
+
+После загрузки Swagger-схемы пользователю предлагается выбрать нужный метод. Метод можно использовать как для получения данных, так и для передачи данных на сторонний сервер.
 
 **Editor 21 - Sources - Choose method**
 [(Full Size)](/public/screen/designer/Editor 21 - Sources - Choose method.png)
+
 ![Editor 21 - Sources - Choose method](/public/screen/designer/thumbs/Editor 21 - Sources - Choose method.jpg)
 
 ###
