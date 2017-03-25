@@ -253,150 +253,238 @@ title: Overview
 
 ## Platform Designer
 
+### 1. Редактор
+
+Редактор порталов позволяет создавать страницы, размещать на них компоненты из палитры, подключать внешние источкники данных, имеющие REST-интерфейс, разрабатывать программную логику.
+
 **Editor 01 - Canvas**
-[(Full Size)](/public/screen/landing/Editor 01 - Canvas.png)
+[(Full Size)](/public/screen/designer/Editor 01 - Canvas.png)
+
 ![Editor 01 - Canvas](/public/screen/designer/thumbs/Editor 01 - Canvas.jpg)
 
+### 2. Редактор со свёрнутыми панелями
+
+Главный элемент редактора - холс, на который размещаются другие компоненты.
+
 **Editor 02 - Canvas - Wide**
-[(Full Size)](/public/screen/landing/Editor 02 - Canvas - Wide.png)
+[(Full Size)](/public/screen/designer/Editor 02 - Canvas - Wide.png)
+
 ![Editor 02 - Canvas - Wide](/public/screen/designer/thumbs/Editor 02 - Canvas - Wide.jpg)
 
+### 3. Палитра микрокомпонент
+
+Палитра микрокомпонент содержит примитивные элементы: текстовые блоки, иконки, кнопки и ссылки.
+
 **Editor 03 - Palette - Micros**
-[(Full Size)](/public/screen/landing/Editor 03 - Palette - Micros.png)
+[(Full Size)](/public/screen/designer/Editor 03 - Palette - Micros.png)
+
 ![Editor 03 - Palette - Micros](/public/screen/designer/thumbs/Editor 03 - Palette - Micros.jpg)
 
+### 4. Палитра контейнеров
+
+Палитра контейнеров содержит элементы, которые управляют расположением жругих компонент.
+- Группа Stack позволяет вытраивать другие элементы стеком друг за другом, вертикально или горизонтально.
+- Группа Repeaters позволяет отображать один и тот же элемент с разными параметрами несколько раз.
+- Группа Layers позволяет выстраивать элемент друг перед другом. - Элемент Composite позволяет использовать ранее созданные в рамках портала пользовательские компоненты в качестве фрагментов страницы.
+
 **Editor 04 - Palette - Containers**
-[(Full Size)](/public/screen/landing/Editor 04 - Palette - Containers.png)
+[(Full Size)](/public/screen/designer/Editor 04 - Palette - Containers.png)
 ![Editor 04 - Palette - Containers](/public/screen/designer/thumbs/Editor 04 - Palette - Containers.jpg)
 
+###
+
 **Editor 05 - Palette - Form**
-[(Full Size)](/public/screen/landing/Editor 05 - Palette - Form.png)
+[(Full Size)](/public/screen/designer/Editor 05 - Palette - Form.png)
 ![Editor 05 - Palette - Form](/public/screen/designer/thumbs/Editor 05 - Palette - Form.jpg)
 
+###
+
 **Editor 06 - Palette - Composites**
-[(Full Size)](/public/screen/landing/Editor 06 - Palette - Composites.png)
+[(Full Size)](/public/screen/designer/Editor 06 - Palette - Composites.png)
 ![Editor 06 - Palette - Composites](/public/screen/designer/thumbs/Editor 06 - Palette - Composites.jpg)
 
+###
+
 **Editor 07 - Palette - Images**
-[(Full Size)](/public/screen/landing/Editor 07 - Palette - Images.png)
+[(Full Size)](/public/screen/designer/Editor 07 - Palette - Images.png)
 ![Editor 07 - Palette - Images](/public/screen/designer/thumbs/Editor 07 - Palette - Images.jpg)
 
+###
+
 **Editor 08 - Shell - Structure**
-[(Full Size)](/public/screen/landing/Editor 08 - Shell - Structure.png)
+[(Full Size)](/public/screen/designer/Editor 08 - Shell - Structure.png)
 ![Editor 08 - Shell - Structure](/public/screen/designer/thumbs/Editor 08 - Shell - Structure.jpg)
 
+###
+
 **Editor 09 - Shell - Tree**
-[(Full Size)](/public/screen/landing/Editor 09 - Shell - Tree.png)
+[(Full Size)](/public/screen/designer/Editor 09 - Shell - Tree.png)
 ![Editor 09 - Shell - Tree](/public/screen/designer/thumbs/Editor 09 - Shell - Tree.jpg)
 
+###
+
 **Editor 10 - Shell - Console**
-[(Full Size)](/public/screen/landing/Editor 10 - Shell - Console.png)
+[(Full Size)](/public/screen/designer/Editor 10 - Shell - Console.png)
 ![Editor 10 - Shell - Console](/public/screen/designer/thumbs/Editor 10 - Shell - Console.jpg)
 
+###
+
 **Editor 11 - Images**
-[(Full Size)](/public/screen/landing/Editor 11 - Images.png)
+[(Full Size)](/public/screen/designer/Editor 11 - Images.png)
 ![Editor 11 - Images](/public/screen/designer/thumbs/Editor 11 - Images.jpg)
 
+###
+
 **Editor 12 - Images - Groups**
-[(Full Size)](/public/screen/landing/Editor 12 - Images - Groups.png)
+[(Full Size)](/public/screen/designer/Editor 12 - Images - Groups.png)
 ![Editor 12 - Images - Groups](/public/screen/designer/thumbs/Editor 12 - Images - Groups.jpg)
 
+###
+
 **Editor 13 - Images - Group settings**
-[(Full Size)](/public/screen/landing/Editor 13 - Images - Group settings.png)
+[(Full Size)](/public/screen/designer/Editor 13 - Images - Group settings.png)
 ![Editor 13 - Images - Group settings](/public/screen/designer/thumbs/Editor 13 - Images - Group settings.jpg)
 
+###
+
 **Editor 14 - Images - Choose**
-[(Full Size)](/public/screen/landing/Editor 14 - Images - Choose.png)
+[(Full Size)](/public/screen/designer/Editor 14 - Images - Choose.png)
 ![Editor 14 - Images - Choose](/public/screen/designer/thumbs/Editor 14 - Images - Choose.jpg)
 
+###
+
 **Editor 15 - Uploads**
-[(Full Size)](/public/screen/landing/Editor 15 - Uploads.png)
+[(Full Size)](/public/screen/designer/Editor 15 - Uploads.png)
 ![Editor 15 - Uploads](/public/screen/designer/thumbs/Editor 15 - Uploads.jpg)
 
+###
+
 **Editor 16 - Uploads - Create group**
-[(Full Size)](/public/screen/landing/Editor 16 - Uploads - Create group.png)
+[(Full Size)](/public/screen/designer/Editor 16 - Uploads - Create group.png)
 ![Editor 16 - Uploads - Create group](/public/screen/designer/thumbs/Editor 16 - Uploads - Create group.jpg)
 
+###
+
 **Editor 17 - Uploads - Choose**
-[(Full Size)](/public/screen/landing/Editor 17 - Uploads - Choose.png)
+[(Full Size)](/public/screen/designer/Editor 17 - Uploads - Choose.png)
 ![Editor 17 - Uploads - Choose](/public/screen/designer/thumbs/Editor 17 - Uploads - Choose.jpg)
 
+###
+
 **Editor 18 - Pages - Create**
-[(Full Size)](/public/screen/landing/Editor 18 - Pages - Create.png)
+[(Full Size)](/public/screen/designer/Editor 18 - Pages - Create.png)
 ![Editor 18 - Pages - Create](/public/screen/designer/thumbs/Editor 18 - Pages - Create.jpg)
 
+###
+
 **Editor 19 - Pages - Edit**
-[(Full Size)](/public/screen/landing/Editor 19 - Pages - Edit.png)
+[(Full Size)](/public/screen/designer/Editor 19 - Pages - Edit.png)
 ![Editor 19 - Pages - Edit](/public/screen/designer/thumbs/Editor 19 - Pages - Edit.jpg)
 
+###
+
 **Editor 20 - Sources - Load schema**
-[(Full Size)](/public/screen/landing/Editor 20 - Sources - Load schema.png)
+[(Full Size)](/public/screen/designer/Editor 20 - Sources - Load schema.png)
 ![Editor 20 - Sources - Load schema](/public/screen/designer/thumbs/Editor 20 - Sources - Load schema.jpg)
 
+###
+
 **Editor 21 - Sources - Choose method**
-[(Full Size)](/public/screen/landing/Editor 21 - Sources - Choose method.png)
+[(Full Size)](/public/screen/designer/Editor 21 - Sources - Choose method.png)
 ![Editor 21 - Sources - Choose method](/public/screen/designer/thumbs/Editor 21 - Sources - Choose method.jpg)
 
+###
+
 **Editor 22 - Sources - Setup params**
-[(Full Size)](/public/screen/landing/Editor 22 - Sources - Setup params.png)
+[(Full Size)](/public/screen/designer/Editor 22 - Sources - Setup params.png)
 ![Editor 22 - Sources - Setup params](/public/screen/designer/thumbs/Editor 22 - Sources - Setup params.jpg)
 
+###
+
 **Editor 23 - Sources - Param value**
-[(Full Size)](/public/screen/landing/Editor 23 - Sources - Param value.png)
+[(Full Size)](/public/screen/designer/Editor 23 - Sources - Param value.png)
 ![Editor 23 - Sources - Param value](/public/screen/designer/thumbs/Editor 23 - Sources - Param value.jpg)
 
+###
+
 **Editor 24 - Sources - Param binding**
-[(Full Size)](/public/screen/landing/Editor 24 - Sources - Param binding.png)
+[(Full Size)](/public/screen/designer/Editor 24 - Sources - Param binding.png)
 ![Editor 24 - Sources - Param binding](/public/screen/designer/thumbs/Editor 24 - Sources - Param binding.jpg)
 
+###
+
 **Editor 25 - Storage - Create**
-[(Full Size)](/public/screen/landing/Editor 25 - Storage - Create.png)
+[(Full Size)](/public/screen/designer/Editor 25 - Storage - Create.png)
 ![Editor 25 - Storage - Create](/public/screen/designer/thumbs/Editor 25 - Storage - Create.jpg)
 
+###
+
 **Editor 26 - Storage - New variable**
-[(Full Size)](/public/screen/landing/Editor 26 - Storage - New variable.png)
+[(Full Size)](/public/screen/designer/Editor 26 - Storage - New variable.png)
 ![Editor 26 - Storage - New variable](/public/screen/designer/thumbs/Editor 26 - Storage - New variable.jpg)
 
+###
+
 **Editor 27 - Actions - Import**
-[(Full Size)](/public/screen/landing/Editor 27 - Actions - Import.png)
+[(Full Size)](/public/screen/designer/Editor 27 - Actions - Import.png)
 ![Editor 27 - Actions - Import](/public/screen/designer/thumbs/Editor 27 - Actions - Import.jpg)
 
+###
+
 **Editor 28 - Actions - Clone**
-[(Full Size)](/public/screen/landing/Editor 28 - Actions - Clone.png)
+[(Full Size)](/public/screen/designer/Editor 28 - Actions - Clone.png)
 ![Editor 28 - Actions - Clone](/public/screen/designer/thumbs/Editor 28 - Actions - Clone.jpg)
 
+###
+
 **Editor 29 - Actions - Mobile**
-[(Full Size)](/public/screen/landing/Editor 29 - Actions - Mobile.png)
+[(Full Size)](/public/screen/designer/Editor 29 - Actions - Mobile.png)
 ![Editor 29 - Actions - Mobile](/public/screen/designer/thumbs/Editor 29 - Actions - Mobile.jpg)
 
+###
+
 **Editor 30 - Actions - Context**
-[(Full Size)](/public/screen/landing/Editor 30 - Actions - Context.png)
+[(Full Size)](/public/screen/designer/Editor 30 - Actions - Context.png)
 ![Editor 30 - Actions - Context](/public/screen/designer/thumbs/Editor 30 - Actions - Context.jpg)
 
+###
+
 **Editor 31 - Widget - Appearance**
-[(Full Size)](/public/screen/landing/Editor 31 - Widget - Appearance.png)
+[(Full Size)](/public/screen/designer/Editor 31 - Widget - Appearance.png)
 ![Editor 31 - Widget - Appearance](/public/screen/designer/thumbs/Editor 31 - Widget - Appearance.jpg)
 
+###
+
 **Editor 32 - Widget - Binding**
-[(Full Size)](/public/screen/landing/Editor 32 - Widget - Binding.png)
+[(Full Size)](/public/screen/designer/Editor 32 - Widget - Binding.png)
 ![Editor 32 - Widget - Binding](/public/screen/designer/thumbs/Editor 32 - Widget - Binding.jpg)
 
+###
+
 **Editor 33 - Widget - Multiple**
-[(Full Size)](/public/screen/landing/Editor 33 - Widget - Multiple.png)
+[(Full Size)](/public/screen/designer/Editor 33 - Widget - Multiple.png)
 ![Editor 33 - Widget - Multiple](/public/screen/designer/thumbs/Editor 33 - Widget - Multiple.jpg)
 
+###
+
 **Editor 34 - Composite**
-[(Full Size)](/public/screen/landing/Editor 34 - Composite.png)
+[(Full Size)](/public/screen/designer/Editor 34 - Composite.png)
 ![Editor 34 - Composite](/public/screen/designer/thumbs/Editor 34 - Composite.jpg)
 
+###
+
 **Editor 35 - Composite - Overrides**
-[(Full Size)](/public/screen/landing/Editor 35 - Composite - Overrides.png)
+[(Full Size)](/public/screen/designer/Editor 35 - Composite - Overrides.png)
 ![Editor 35 - Composite - Overrides](/public/screen/designer/thumbs/Editor 35 - Composite - Overrides.jpg)
 
+###
+
 **Editor 36 - Composite - Used**
-[(Full Size)](/public/screen/landing/Editor 36 - Composite - Used.png)
+[(Full Size)](/public/screen/designer/Editor 36 - Composite - Used.png)
 ![Editor 36 - Composite - Used](/public/screen/designer/thumbs/Editor 36 - Composite - Used.jpg)
 
+###
+
 **Editor 37 - Modals**
-[(Full Size)](/public/screen/landing/Editor 37 - Modals.png)
+[(Full Size)](/public/screen/designer/Editor 37 - Modals.png)
 ![Editor 37 - Modals](/public/screen/designer/thumbs/Editor 37 - Modals.jpg)
