@@ -1,7 +1,7 @@
 ---
 layout: page
 title: License
-order: 3
+order: 4
 ---
 # Released under MIT License
 
