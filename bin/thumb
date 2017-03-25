@@ -1,0 +1,2 @@
+mogrify -resize 640x640 -background white -gravity center -format jpg -quality 75 -path "../public/screen/landing/thumbs" "../public/screen/landing/*.png"
+mogrify -resize 640x640 -background white -gravity center -format jpg -quality 75 -path "../public/screen/designer/thumbs" "../public/screen/designer/*.png"

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archery Platform
+title: About
 ---
 # About
 
