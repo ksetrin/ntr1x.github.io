@@ -443,98 +443,155 @@ title: Overview
 
 ![Editor 21 - Sources - Choose method](/public/screen/designer/thumbs/Editor 21 - Sources - Choose method.jpg)
 
-###
+### 22. Настройка параметров запроса
+
+Для вызова любого REST-запроса можно задать параметры. Список параметров можно менять даже если описание было импортировано из Swagger-схемы.
 
 **Editor 22 - Sources - Setup params**
 [(Full Size)](/public/screen/designer/Editor 22 - Sources - Setup params.png)
+
 ![Editor 22 - Sources - Setup params](/public/screen/designer/thumbs/Editor 22 - Sources - Setup params.jpg)
 
-###
+### 23. Задание значения параметра
+
+Каждый параметр имеет имя, значение, а также тип, который определяет способ отправки параметра.
 
 **Editor 23 - Sources - Param value**
 [(Full Size)](/public/screen/designer/Editor 23 - Sources - Param value.png)
+
 ![Editor 23 - Sources - Param value](/public/screen/designer/thumbs/Editor 23 - Sources - Param value.jpg)
 
-###
+### 24. Связывание параметра
+
+Значение параметра может быть вычислимым. В формуле можно использовать параметры из внутренних переменных страницы.
 
 **Editor 24 - Sources - Param binding**
 [(Full Size)](/public/screen/designer/Editor 24 - Sources - Param binding.png)
+
 ![Editor 24 - Sources - Param binding](/public/screen/designer/thumbs/Editor 24 - Sources - Param binding.jpg)
 
-###
+### 25. Создание набора переменных
+
+Каждая страница может иметь неограниченное число наборов переменных. Переменные исопльзуются для сохраения данных, полученных из удалённыхисточников, а также данных собранных из форм страницы.
 
 **Editor 25 - Storage - Create**
 [(Full Size)](/public/screen/designer/Editor 25 - Storage - Create.png)
+
 ![Editor 25 - Storage - Create](/public/screen/designer/thumbs/Editor 25 - Storage - Create.jpg)
 
-###
+### 26. Создание переменной
+
+Переменная в наборе имеет имя и начальное значение. Начальное значение может быть расчитано по формуле.
 
 **Editor 26 - Storage - New variable**
 [(Full Size)](/public/screen/designer/Editor 26 - Storage - New variable.png)
+
 ![Editor 26 - Storage - New variable](/public/screen/designer/thumbs/Editor 26 - Storage - New variable.jpg)
 
-###
+### 27. Импорт страниц
+
+Платформа позволяет импортировать страницы из публично доступных шаблонов порталов. Модальные диалоги и компоненты также являются страницами особого вида и могут быть импортированы.
 
 **Editor 27 - Actions - Import**
 [(Full Size)](/public/screen/designer/Editor 27 - Actions - Import.png)
+
 ![Editor 27 - Actions - Import](/public/screen/designer/thumbs/Editor 27 - Actions - Import.jpg)
 
-###
+### 28. Клонирование страниц
+
+Любая страница портала может быть клонирована. При клонировании достаточно задать имя создаваемой страницы. Будет клонирована текущая открытая страница.
 
 **Editor 28 - Actions - Clone**
 [(Full Size)](/public/screen/designer/Editor 28 - Actions - Clone.png)
+
 ![Editor 28 - Actions - Clone](/public/screen/designer/thumbs/Editor 28 - Actions - Clone.jpg)
 
-###
+### 29. Отображение в мобильном режиме
+
+Редактор позволяет отркрыть любую страницу в мобильном режиме. Размер экрана будет соответствовать размеру мобильного устройства.
 
 **Editor 29 - Actions - Mobile**
 [(Full Size)](/public/screen/designer/Editor 29 - Actions - Mobile.png)
+
 ![Editor 29 - Actions - Mobile](/public/screen/designer/thumbs/Editor 29 - Actions - Mobile.jpg)
 
-###
+### 30. Контекст компонента
+
+Страница и любой виджет на странице имеют контекст. Этот контекст содержит набор объектов, которые доступны при задании вычислимы свойсвт. Данный набор объектов имеет как предопределённую фиксированную часть, одинаковую для всех компонет страницы, так и динамическую часть, которая может различаться между компонентами.
+
+В частности элементы внутри композита Repeater имеют доступ к переменной, хранящей текущее значение массива в компоненте Repeater.
 
 **Editor 30 - Actions - Context**
 [(Full Size)](/public/screen/designer/Editor 30 - Actions - Context.png)
+
 ![Editor 30 - Actions - Context](/public/screen/designer/thumbs/Editor 30 - Actions - Context.jpg)
 
-###
+### 31. Настройки вижета
+
+Любой виджет (портлет) на странице имеет множество настроек. Настройки сгруппированы по категорим и иерархиям.
 
 **Editor 31 - Widget - Appearance**
 [(Full Size)](/public/screen/designer/Editor 31 - Widget - Appearance.png)
+
 ![Editor 31 - Widget - Appearance](/public/screen/designer/thumbs/Editor 31 - Widget - Appearance.jpg)
 
-###
+### 32. Связывание настроек
+
+Настройки виджетов (портлетов) могут иметь значения, заданные формулами.
 
 **Editor 32 - Widget - Binding**
 [(Full Size)](/public/screen/designer/Editor 32 - Widget - Binding.png)
+
 ![Editor 32 - Widget - Binding](/public/screen/designer/thumbs/Editor 32 - Widget - Binding.jpg)
 
-###
+### 33. Множественные значения
+
+Для некоторых свойств поддерживаются множественные значения. Значения можно переставлять местами. Список также может определяться выражением. Вычисленное выражение имеет приоритет над начальными значениями, заданными в редакторе.
 
 **Editor 33 - Widget - Multiple**
 [(Full Size)](/public/screen/designer/Editor 33 - Widget - Multiple.png)
+
 ![Editor 33 - Widget - Multiple](/public/screen/designer/thumbs/Editor 33 - Widget - Multiple.jpg)
 
-###
+### 34. Пользовательские компоненты
+
+Пользовательские компоненты создаются в дизайнере как страницы особого типа. Размер компонента определяется размером страницы до тех пор, пока не равен 100% по ширине и высоте. В этом случает размер компонента будет определяться размером зоны, в которую он помещён при повторном использовании.
 
 **Editor 34 - Composite**
 [(Full Size)](/public/screen/designer/Editor 34 - Composite.png)
+
 ![Editor 34 - Composite](/public/screen/designer/thumbs/Editor 34 - Composite.jpg)
 
-###
+### 35. Динамические параметры пользовательских компонент
+
+При проектировании компонента, как и при проектировании страницы, пользователь определяет набор внутренних переменных страницы. Эти переменные могут быть использованы в формулах при связывании значений свойств.
+
+Все наборы переменных компонента экспортируются в родительскую страницу и их значения можно переопределить. В том числе при переопределении можно использовать и вычислимые выражения.
 
 **Editor 35 - Composite - Overrides**
 [(Full Size)](/public/screen/designer/Editor 35 - Composite - Overrides.png)
+
 ![Editor 35 - Composite - Overrides](/public/screen/designer/thumbs/Editor 35 - Composite - Overrides.jpg)
 
-###
+### 36. Пользовательский компоненты на хост-странице
+
+Компонент может быть размещён на хост-странице, а его свойства могут быть переопределены.
 
 **Editor 36 - Composite - Used**
 [(Full Size)](/public/screen/designer/Editor 36 - Composite - Used.png)
+
 ![Editor 36 - Composite - Used](/public/screen/designer/thumbs/Editor 36 - Composite - Used.jpg)
 
-###
+### 37. Модальные диалоги
+
+Любую страницу можно открыть в модальном диалоге, выполнив выражение:
+```javascript
+$store.dispatch('modals/show', { page: 'ИмяСтраницы' })
+```
+
+Имя основной страницы равно пустой строке.
 
 **Editor 37 - Modals**
 [(Full Size)](/public/screen/designer/Editor 37 - Modals.png)
+
 ![Editor 37 - Modals](/public/screen/designer/thumbs/Editor 37 - Modals.jpg)
