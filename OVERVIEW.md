@@ -6,112 +6,247 @@ title: Overview
 
 ## Control Panel
 
+### 1. Главная страница - Витрина
+
+Главная страница контрольной панели является титульной страницей сервиса. Основной элемент страницы - витрина, на которой выставлены шаблоны, доступные пользователю.
+
 **Screen 01 - Main Page**
 [(Full Size)](/public/screen/landing/Screen 01 - Main Page.png)
+
 ![Screen 01 - Main Page](/public/screen/landing/thumbs/Screen 01 - Main Page.jpg)
+
+### 2. Главная страница - Описание
+
+Главная страница контрольной панели несёт комбинированную функцию. Кроме управления платформой на главной странице можно ознакомиться с возможностями платформы и приобрести лицензию.
 
 **Screen 02 - Main Offers**
 [(Full Size)](/public/screen/landing/Screen 02 - Main Offers.png)
+
 ![Screen 02 - Main Offers](/public/screen/landing/thumbs/Screen 02 - Main Offers.jpg)
+
+### 3. Регистрация
+
+Пользователи регистрируются, вводя своё имя, почтовый адрес и пароль.
 
 **Screen 03 - Signup.png**
 [(Full Size)](/public/screen/landing/Screen 03 - Signup.png)
+
 ![Screen 03 - Signup](/public/screen/landing/thumbs/Screen 03 - Signup.jpg)
+
+### 4. Пподтверждение регистрации
+
+Пользователь информирцется о том, что на почтовый адрес, указанный при регистрации, отправлено сообщение с просьбой подтвердить учётную запись.
 
 **Screen 04 - Signup - Confirmation**
 [(Full Size)](/public/screen/landing/Screen 04 - Signup - Confirmation.png)
+
 ![Screen 04 - Signup - Confirmation](/public/screen/landing/thumbs/Screen 04 - Signup - Confirmation.jpg)
+
+### 5. Регистрация завершена
+
+После подтверждения почтового адреса пользователь информируется о том, что регистрация завершена.
 
 **Screen 05 - Signup - Complete**
 [(Full Size)](/public/screen/landing/Screen 05 - Signup - Complete.png)
+
 ![Screen 05 - Signup - Complete](/public/screen/landing/thumbs/Screen 05 - Signup - Complete.jpg)
+
+### 6. Вход
+
+Пользователь входит, указывая свой логин и пароль. Если пользователь забыл пароль, он может пройти процедуру восстановления пароля.
 
 **Screen 06 - Signin**
 [(Full Size)](/public/screen/landing/Screen 06 - Signin.png)
+
 ![Screen 06 - Signin](/public/screen/landing/thumbs/Screen 06 - Signin.jpg)
 
-**Screen 07 - Account - Password updated**
-[(Full Size)](/public/screen/landing/Screen 07 - Account - Password updated.png)
-![Screen 07 - Account - Password updated](/public/screen/landing/thumbs/Screen 07 - Account - Password updated.jpg)
+### 7. Профиль
 
-**Screen 08 - Account - Profile**
-[(Full Size)](/public/screen/landing/Screen 08 - Account - Profile.png)
-![Screen 08 - Account - Profile](/public/screen/landing/thumbs/Screen 08 - Account - Profile.jpg)
+На странице профиля пользователь можен изменить имя, пароль и электронный почтовый адрес, использованный при регистрации.
+
+**Screen 07 - Account - Profile**
+[(Full Size)](/public/screen/landing/Screen 07 - Account - Profile.png)
+
+![Screen 07 - Account - Profile](/public/screen/landing/thumbs/Screen 07 - Account - Profile.jpg)
+
+### 8. Сообщение об изменёнии пароля
+
+После успешного изменения пароля пользователю показывается сообщение. Также на электронный почтовый адрес пользователя отправляется сообщение.
+
+**Screen 08 - Account - Password updated**
+[(Full Size)](/public/screen/landing/Screen 08 - Account - Password updated.png)
+
+![Screen 08 - Account - Password updated](/public/screen/landing/thumbs/Screen 08 - Account - Password updated.jpg)
+
+### 9. Сообщение об изменении профиля
+
+После успешного изменения профиля пользователю показывается сообщение.
 
 **Screen 09 - Account - Profile updated**
 [(Full Size)](/public/screen/landing/Screen 09 - Account - Profile updated.png)
+
 ![Screen 09 - Account - Profile updated](/public/screen/landing/thumbs/Screen 09 - Account - Profile updated.jpg)
+
+### 10. Подтверждение почтового адреса
+
+При смене почтового адреса требуется его подтвердить. До завершения процедуры платформа будет использовать старый почтовый адрес пользователя.
 
 **Screen 10 - Account - Email confirmation**
 [(Full Size)](/public/screen/landing/Screen 10 - Account - Email confirmation.png)
+
 ![Screen 10 - Account - Email confirmation](/public/screen/landing/thumbs/Screen 10 - Account - Email confirmation.jpg)
+
+### 11. Восстановление пароля
+
+Для восстановления пароля пользователь должен указать почтовый адрес, использованный при регистрации. На данный почтовый адрес будет оправлено сообщение со ссылкой, которую можно использовать для продолжения процедуры.
 
 **Screen 11 - Account - Password recovery**
 [(Full Size)](/public/screen/landing/Screen 11 - Account - Password recovery.png)
+
 ![Screen 11 - Account - Password recovery](/public/screen/landing/thumbs/Screen 11 - Account - Password recovery.jpg)
+
+### 12. Инструкции по восстановлению пароля
+
+Пользователь оповещается о том, что на его почтовый адрес, указанный при регистрации, была отправлена ссылка для продолжения процедуры смены пароля.
 
 **Screen 12 - Account - Password confirmation**
 [(Full Size)](/public/screen/landing/Screen 12 - Account - Password confirmation.png)
+
 ![Screen 12 - Account - Password confirmation](/public/screen/landing/thumbs/Screen 12 - Account - Password confirmation.jpg)
+
+### 13. Сброс пароля
+
+Перейдя по ссылке из письма-подтверждения смены пароля пользователь имеет возможность указать новый пароль, не указывая старый.
 
 **Screen 13 - Account - Password reset**
 [(Full Size)](/public/screen/landing/Screen 13 - Account - Password reset.png)
+
 ![Screen 13 - Account - Password reset](/public/screen/landing/thumbs/Screen 13 - Account - Password reset.jpg)
+
+### 14. Заявка
+
+Пользователь запрашивает нестандартную коммерческую услугу, указывая дополнительную информацию о себе.
 
 **Screen 14 - Apply**
 [(Full Size)](/public/screen/landing/Screen 14 - Apply.png)
+
 ![Screen 14 - Apply](/public/screen/landing/thumbs/Screen 14 - Apply.jpg)
+
+### 15. Заявка принята
+
+Пользователь оповещается о том, что его запрос получен и будет обработан.
 
 **Screen 15 - Apply - Success**
 [(Full Size)](/public/screen/landing/Screen 15 - Apply - Success.png)
+
 ![Screen 15 - Apply - Success](/public/screen/landing/thumbs/Screen 15 - Apply - Success.jpg)
+
+### 16. Клонирование портала
+
+Для удобства пользователя он может создать портал путём клонирования ранее созданного портала. Для клонирования портала достаточно указать новое имя портала. Домен можно настроить позже.
 
 **Screen 16 - Portals - Clone**
 [(Full Size)](/public/screen/landing/Screen 16 - Portals - Clone.png)
+
 ![Screen 16 - Portals - Clone](/public/screen/landing/thumbs/Screen 16 - Portals - Clone.jpg)
+
+### 17. Создание нового портала
+
+Для создания нового портала достаточно указать имя. Домен можно настроить позже.
 
 **Screen 17 - Portals - Create**
 [(Full Size)](/public/screen/landing/Screen 17 - Portals - Create.png)
+
 ![Screen 17 - Portals - Create](/public/screen/landing/thumbs/Screen 17 - Portals - Create.jpg)
+
+
+### 18. Список порталов пользователя
+
+Список порталов пользователя является главной внутренней страницей контрольной панели.
 
 **Screen 18 - Portals**
 [(Full Size)](/public/screen/landing/Screen 18 - Portals.png)
 ![Screen 18 - Portals](/public/screen/landing/thumbs/Screen 18 - Portals.jpg)
 
+### 19. Настройки портала
+
+В настройках можно изменить название портала и загрузить изображение, которое будет доступно другим пользователям если портал будет опубликован в качестве шаблона.
+
 **Screen 19 - Portals - Settings**
 [(Full Size)](/public/screen/landing/Screen 19 - Portals - Settings.png)
+
 ![Screen 19 - Portals - Settings](/public/screen/landing/thumbs/Screen 19 - Portals - Settings.jpg)
+
+### 20. Список доменов
+
+Портал может быть опубликован на нескольких доменах. Поддомен si.ntr1x.com регистрируется при создании портала автоматически. Этот поддомен нужен для правильной работы редактора.
 
 **Screen 20 - Domains**
 [(Full Size)](/public/screen/landing/Screen 20 - Domains.png)
+
 ![Screen 20 - Domains](/public/screen/landing/thumbs/Screen 20 - Domains.jpg)
+
+### 21. Редакирование домена
+
+Имя домена можно изменить в настройках. Изменения сразу вступают в силу. Если указывается внешний домен, необходимо убедиться, что DNS-сервер, обслуживающий домен, указывает на один из IP-адресов платформы.
 
 **Screen 21 - Domains - Update**
 [(Full Size)](/public/screen/landing/Screen 21 - Domains - Update.png)
+
 ![Screen 21 - Domains - Update](/public/screen/landing/thumbs/Screen 21 - Domains - Update.jpg)
+
+### 22. Регистрация домена
+
+Портал может иметь несколько доменов. Пользователь может использовать любые имена во внутренних зонах платформы. Если указывается внешний домен, необходимо убедиться, что DNS-сервер, обслуживающий домен, указывает на один из IP-адресов платформы.
 
 **Screen 22 - Domains - Create**
 [(Full Size)](/public/screen/landing/Screen 22 - Domains - Create.png)
+
 ![Screen 22 - Domains - Create](/public/screen/landing/thumbs/Screen 22 - Domains - Create.jpg)
+
+### 24. Управление мета-информацией
+
+Мета-информация исопльзуется для лучшего представления портала в поисковиках, а также для управления внешним видом при отображении страниц портала на мобильных устройствах. Пользователь свободно может использовать любые имена и значения.
 
 **Screen 24 - Portals - Meta**
 [(Full Size)](/public/screen/landing/Screen 24 - Portals - Meta.png)
+
 ![Screen 24 - Portals - Meta](/public/screen/landing/thumbs/Screen 24 - Portals - Meta.jpg)
+
+### 25. Управление роутером
+
+Некоторые специальные действия (например перенаправления при регистрации или переходы из ссылок в почтовых сообщениях) требуют перенаправлений на серверной стороне. В данном интерфейсе можно управлять списком перенаправлений.
 
 **Screen 25 - Portals - Router**
 [(Full Size)](/public/screen/landing/Screen 25 - Portals - Router.png)
+
 ![Screen 25 - Portals - Router](/public/screen/landing/thumbs/Screen 25 - Portals - Router.jpg)
+
+### 26. Управление настройками отправки почты
+
+Каждый портал может использовать встроенный в платформу механизм авторизации и аутентификации. Конструктор может использовать для ускорения процесса разработки. Многие регистрационные действия приводят к отправке пользователям почтовых сообщений. По соображениям безопасности для каждого портала необходимо использовать собственный сервер отправки почты. Данный интерфейс позволяет настроить подключение к нему.
 
 **Screen 26 - Portals - Mailer**
 [(Full Size)](/public/screen/landing/Screen 26 - Portals - Mailer.png)
+
 ![Screen 26 - Portals - Mailer](/public/screen/landing/thumbs/Screen 26 - Portals - Mailer.jpg)
+
+### 27. Управление списком почтовых шаблонов
+
+Список шаблонов сообщений, которые могут быть отправлены пользователям конечных порталов.
 
 **Screen 27 - Portals - Mail templates**
 [(Full Size)](/public/screen/landing/Screen 27 - Portals - Mail templates.png)
+
 ![Screen 27 - Portals - Mail templates](/public/screen/landing/thumbs/Screen 27 - Portals - Mail templates.jpg)
+
+### 28. Редактирование шаблона письма
+
+Каждый шаблон почтового сообщения может быть изменён конструктором портала. Для редактирования текста шаблона не используется визуальный редактор, так как почтовое сообщение должно быть описано на упрощённом диалекте HTML и не должно исопльзовать скриптов.
 
 **Screen 28 - Portals - Mail template editor**
 [(Full Size)](/public/screen/landing/Screen 28 - Portals - Mail template editor.png)
+
 ![Screen 28 - Portals - Mail template editor](/public/screen/landing/thumbs/Screen 28 - Portals - Mail template editor.jpg)
 
 ---
