@@ -476,8 +476,8 @@ sh ~/scripts/build-com.example.storage
 
 ### Список компонент
 
-1. **Server Instance** - Контрольная панель и главная страница сервиса
-1. **Backend Instance** - Компонент, отвечающий за режим конструирования портала
+1. **Server Instance** - Установка, содержащае компоненты Control Panel, Designer, Viewer, Router
+1. **Backend Instance** - Установка, содержащая компоненты Storage и Source
 
 ### Принципиальная схема
 
