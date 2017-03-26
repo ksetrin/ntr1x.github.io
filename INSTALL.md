@@ -251,6 +251,205 @@ sh ~/scripts/build-com.example.archery
 
 #### Настройка серверной части платформы
 
+Разместите в домашней папке администратора системы файл с настройками:
+
+`~/scripts/config-com.example.storage/application-prod.properties`
+
+```
+spring.datasource.url = jdbc:mysql://localhost:3306/storage_dist?useSSL=false&autoReconnect=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&characterSetResults=utf8&connectionCollation=utf8_general_ci
+
+spring.datasource.username = storage
+spring.datasource.password = storage
+
+eclipselink.ddl-generation.output-mode = sql-script
+spring.jpa.show-sql = true
+
+server.port = 8104
+
+app.public.url = http://storage.example.com
+app.public.host = storage.example.com
+app.public.schemes = http
+
+app.local.url = http://localhost:8104
+app.local.host = localhost:8104
+
+app.files.root = /var/data/com.example.storage
+```
+
+Создайте на сервере mysql базу данных с именем storage_dist, а также пользователя storage
+с паролем storage с привилегиями на все операции над базой storage_dist. Или используйте
+любые другие учётные данные, только убедитесь, что в конфигурационном файле указаны именно они.
+
+Создайте вручную каталоги:
+
+`/var/data/com.example.storage`
+`/var/projects/com.example.storage`
+`/opt/com.example.storage`
+
+Разместите с домашней папке администратора системы сценарий загрузки и установки:
+
+`~/scripts/build-com.example.storage`
+
+```
+#!/bin/bash
+
+SERVICE='com.example.storage'
+PROJECT_DIR="/var/projects/$SERVICE"
+WEBAPP_DIR="/opt/$SERVICE"
+GIT_PATH='https://github.com/ntr1x/ntr1x-storage-launch.git'
+GIT_BRANCH='master'
+MAVEN='/usr/bin/mvn'
+MAVEN_LOCAL='~/.m2/repository'
+CONFIG_FILE="~/scripts/config-$SERVICE/application-prod.properties"
+
+rm -rf $PROJECT_DIR
+mkdir -p $PROJECT_DIR
+chmod 775 $PROJECT_DIR
+git clone -b $GIT_BRANCH $GIT_PATH $PROJECT_DIR
+rm -rf $PROJECT_DIR/.git
+cd $PROJECT_DIR
+chgrp -R developers .
+
+#screen -S $SERVICE -X quit
+
+rm -rf $WEBAPP_DIR/*
+mkdir -p $WEBAPP_DIR
+chmod 775 $WEBAPP_DIR
+cp -R $PROJECT_DIR/. $WEBAPP_DIR
+cp $CONFIG_FILE $WEBAPP_DIR/src/main/resources/
+cd $WEBAPP_DIR
+chgrp -R developers .
+rm -rf $MAVEN_LOCAL/com/ntr1x/storage
+
+#screen -S $SERVICE -d -m $MAVEN spring-boot:run -Drun.profiles=prod -P build
+$MAVEN spring-boot:run -Drun.profiles=prod,recreate,setup -P build
+#$MAVEN spring-boot:run -Drun.profiles=prod -P build
+```
+
+Обратите внимание на наличие закоментированных строк. Так и должно быть. Выполните этот сценарий командой:
+
+```
+sh ~/scripts/build-com.example.storage
+```
+
+Дождитесь запуска сервера и остановите его сочетанием CTRL+C.
+
+Сценарий создаст в базе данных необходимые таблицы и наполнит их данными.
+Сценарий не создаст некоторые необходимые индексы и их нужно создать в
+консоли mysql-сервера, выполнив набор команд для базы данных `storage_dist`:
+
+```
+ALTER TABLE `portals` DROP FOREIGN KEY `FK_portals_UserId`;
+ALTER TABLE `portals` ADD CONSTRAINT `FK_portals_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `portals` DROP FOREIGN KEY `FK_portals_ThumbnailId`;
+ALTER TABLE `portals` ADD CONSTRAINT `FK_portals_ThumbnailId` FOREIGN KEY (`ThumbnailId`) REFERENCES `resources` (`Id`) ON DELETE SET NULL;
+
+ALTER TABLE `domains` DROP FOREIGN KEY `FK_domains_PortalId`;
+ALTER TABLE `domains` ADD CONSTRAINT `FK_domains_PortalId` FOREIGN KEY (`PortalId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `templates` DROP FOREIGN KEY `FK_templates_PortalId`;
+ALTER TABLE `templates` ADD CONSTRAINT `FK_templates_PortalId` FOREIGN KEY (`PortalId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `grants` DROP FOREIGN KEY `FK_grants_UserId`;
+ALTER TABLE `grants` ADD CONSTRAINT `FK_grants_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `offers` DROP FOREIGN KEY `FK_offers_UserId`;
+ALTER TABLE `offers` ADD CONSTRAINT `FK_offers_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `offers` DROP FOREIGN KEY `FK_offers_RelateId`;
+ALTER TABLE `offers` ADD CONSTRAINT `FK_offers_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `offers` DROP FOREIGN KEY `FK_offers_ImageId`;
+ALTER TABLE `offers` ADD CONSTRAINT `FK_offers_ImageId` FOREIGN KEY (`ImageId`) REFERENCES `resources` (`Id`) ON DELETE SET NULL;
+
+ALTER TABLE `orders` DROP FOREIGN KEY `FK_orders_UserId`;
+ALTER TABLE `orders` ADD CONSTRAINT `FK_orders_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `orders` DROP FOREIGN KEY `FK_orders_RelateId`;
+ALTER TABLE `orders` ADD CONSTRAINT `FK_orders_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `params` DROP FOREIGN KEY `FK_params_RelateId`;
+ALTER TABLE `params` ADD CONSTRAINT `FK_params_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `publications` DROP FOREIGN KEY `FK_publications_UserId`;
+ALTER TABLE `publications` ADD CONSTRAINT `FK_publications_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `publications` DROP FOREIGN KEY `FK_publications_RelateId`;
+ALTER TABLE `publications` ADD CONSTRAINT `FK_publications_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `publications` DROP FOREIGN KEY `FK_publications_ImageId`;
+ALTER TABLE `publications` ADD CONSTRAINT `FK_publications_ImageId` FOREIGN KEY (`ImageId`) REFERENCES `resources` (`Id`) ON DELETE SET NULL;
+
+ALTER TABLE `resources_images` DROP FOREIGN KEY `FK_resources_images_RelateId`;
+ALTER TABLE `resources_images` ADD CONSTRAINT `FK_resources_images_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `resources_images` DROP FOREIGN KEY `FK_resources_images_ImageId`;
+ALTER TABLE `resources_images` ADD CONSTRAINT `FK_resources_images_ImageId` FOREIGN KEY (`ImageId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `sessions` DROP FOREIGN KEY `FK_sessions_UserId`;
+ALTER TABLE `sessions` ADD CONSTRAINT `FK_sessions_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `tokens` DROP FOREIGN KEY `FK_tokens_UserId`;
+ALTER TABLE `tokens` ADD CONSTRAINT `FK_tokens_UserId` FOREIGN KEY (`UserId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `resources_uploads` DROP FOREIGN KEY `FK_resources_uploads_RelateId`;
+ALTER TABLE `resources_uploads` ADD CONSTRAINT `FK_resources_uploads_RelateId` FOREIGN KEY (`RelateId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+
+ALTER TABLE `resources_uploads` DROP FOREIGN KEY `FK_resources_uploads_UploadId`;
+ALTER TABLE `resources_uploads` ADD CONSTRAINT `FK_resources_uploads_UploadId` FOREIGN KEY (`UploadId`) REFERENCES `resources` (`Id`) ON DELETE CASCADE;
+```
+
+Далее необходимо убрать из файла `build-com.example.storage` инструкции, отвечающие за пересоздание базы данных. И раскомментировать инструкции, коотрые позволяют сервису запускаться в фоновом процессе. Для этого отредактируйте файл `build-com.example.storage` и приведите его в следующий вид:
+
+Разместите с домашней папке администратора системы сценарий загрузки и установки:
+
+`~/scripts/build-com.example.storage`
+
+```
+#!/bin/bash
+
+SERVICE='com.example.storage'
+PROJECT_DIR="/var/projects/$SERVICE"
+WEBAPP_DIR="/opt/$SERVICE"
+GIT_PATH='https://github.com/ntr1x/ntr1x-storage-launch.git'
+GIT_BRANCH='master'
+MAVEN='/usr/bin/mvn'
+MAVEN_LOCAL='~/.m2/repository'
+CONFIG_FILE="~/scripts/config-$SERVICE/application-prod.properties"
+
+rm -rf $PROJECT_DIR
+mkdir -p $PROJECT_DIR
+chmod 775 $PROJECT_DIR
+git clone -b $GIT_BRANCH $GIT_PATH $PROJECT_DIR
+rm -rf $PROJECT_DIR/.git
+cd $PROJECT_DIR
+chgrp -R developers .
+
+screen -S $SERVICE -X quit
+
+rm -rf $WEBAPP_DIR/*
+mkdir -p $WEBAPP_DIR
+chmod 775 $WEBAPP_DIR
+cp -R $PROJECT_DIR/. $WEBAPP_DIR
+cp $CONFIG_FILE $WEBAPP_DIR/src/main/resources/
+cd $WEBAPP_DIR
+chgrp -R developers .
+rm -rf $MAVEN_LOCAL/com/ntr1x/storage
+
+screen -S $SERVICE -d -m $MAVEN spring-boot:run -Drun.profiles=prod -P build
+#$MAVEN spring-boot:run -Drun.profiles=prod,recreate,setup -P build
+#$MAVEN spring-boot:run -Drun.profiles=prod -P build
+```
+
+Можно совсем убрать закомментированные строки, или оставить их на случай,
+если позже возникнет необходимость пересоздать базу данных.
+Выполните этот сценарий командой:
+
+```
+sh ~/scripts/build-com.example.storage
+```
+
 ## Режим разработчика
 
 Данная схема развёртывания предназначена для использования в режиме разработчика.
